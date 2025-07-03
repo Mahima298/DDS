@@ -1,0 +1,34 @@
+A stack is a linear data structure that follows the last in first out [LIFO]
+COMMON OPERATIONS :-
+push() :- Used to INSERT element in stack 
+pop() :- Used to REMOVE element in stack 
+peek() :- Used to DISPLAY THE TOP ELEMENT in stack 
+display() :- Used to DISPLAY ALL THE ELEMENTS of stack 
+"overflow" :- Used when stack is FULL .
+
+EXAMPLE:- 
+#include <stdio.h>
+
+#define SIZE 5
+
+int stack[SIZE];
+int top = -1;
+
+void push(int num) {
+    if (top < SIZE - 1) {
+        top++;
+        stack[top] = num;
+        printf("%d is inserted successfully\n", num);
+    } else {
+        printf("Stack is overflow\n");
+    }
+}
+
+int main() {
+    push(5);
+    return 0;
+}
+
+
+
+

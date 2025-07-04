@@ -1,0 +1,41 @@
+C++ is a general-purpose programming language known for its efficiency and versatility. It's an object-oriented language that extends the C language, offering features like classes, inheritance, and polymorphism. C++ is widely used in system programming, game development, high-performance applications, and more. 
+Here's a more detailed explanation:
+Object-Oriented Programming (OOP):
+C++ is an object-oriented language, meaning it organizes code into reusable "objects" that contain data and methods (functions) that operate on that data. This promotes modularity, reusability, and easier maintenance of large codebases. 
+Extension of C:
+C++ was designed as an extension of the C language, inheriting its syntax and low-level control capabilities. This allows developers to work with hardware and system resources efficiently. 
+Performance:
+C++ is known for its speed and efficiency, making it suitable for performance-critical applications where speed is paramount. 
+Versatile:
+C++ is used in a wide range of applications, including: 
+Operating Systems: Windows, macOS, and Linux kernels rely on C++. 
+Game Development: Many popular games are built using C++. 
+Real-Time Systems: C++ is well-suited for applications requiring fast response times. 
+High-Frequency Trading: C++ is used in financial applications where speed is crucial. 
+Embedded Systems: C++ can be used to develop software for devices like smartphones, cars, and other embedded systems. 
+
+EXAMPLE :-
+
+#include<iostream>
+using namespace std;
+#define size 5
+int stack [size];
+int top=-1;
+void push (int val) {
+if(top<size-1) {
+top++;
+stack [top]=val;
+cout<<val<<"inserted successfully"<<endl;
+}
+else{
+cout<<"stack is overflow"<<endl;
+}}
+int main(){
+push(10);
+push (2);
+push(5);
+push(8);
+push(10);
+push(28);
+return 0;
+}

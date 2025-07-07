@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+#define Size 6
+int stack[Size];
+int top = -1 ;
+void push (int num){
+    if(top<Size-1){
+        top++;
+        stack[top]=num;
+        cout<<num<<"inserted"<<endl;
+    }
+}
+void pop(){
+    if(top==-1){
+        cout<<"stack is underflow"<<endl;
+    }else{
+        cout<<stack[top]<<"removed"<<endl;
+        top--;
+    }
+
+OUTPUT :- 
+8inserted
+6inserted
+5inserted
+9inserted
+9removed
+5removed
+16inserted
+
+
+
+
+
+
